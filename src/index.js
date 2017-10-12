@@ -2,7 +2,10 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import QuoteBox from './component/QuoteBox';
 import QuoteButton from './component/QuoteButton';
+import TwitterButton from './component/TwitterButton';
 import $ from 'jquery';
+
+
 
 class App extends Component {
   constructor(props) {
@@ -28,6 +31,7 @@ getQuote(){
     return (
       <div>
       <QuoteBox quote={this.state.quote}/>
+      <TwitterButton />
       <QuoteButton getQuote={this.getQuote.bind(this)} />
       </div>
     );
