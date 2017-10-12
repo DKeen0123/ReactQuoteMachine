@@ -23,15 +23,24 @@ getQuote(){
     success: (quote) => {
       this.setState({quote});
     }
-
   });
+}
+
+createTweet(){
+  let ranQuote = this.state.quote.quoteText;
+  let ranAuthor = this.state.quote.quoteAuthor;
+  let enCode = encodeURI(ranQuote + ranAuthor);
+  window.open(`https://twitter.com/intent/tweet?text=${enCode}`)
 }
 
   render() {
     return (
       <div>
       <QuoteBox quote={this.state.quote}/>
-      <TwitterButton />
+      <TwitterButton
+      quote={this.state.quote}
+      createTweet={this.createTweet.bind(this)}
+      />
       <QuoteButton getQuote={this.getQuote.bind(this)} />
       </div>
     );

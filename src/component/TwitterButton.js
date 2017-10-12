@@ -2,10 +2,10 @@ import React from 'react';
 import FaTwitter from 'react-icons/lib/fa/twitter';
 
 
-const TwitterButton = () => {
+const TwitterButton = (props) => {
   return (
     <div>
-      <a href='#'><FaTwitter /></a>
+      <a href='#' onClick={props.createTweet}><FaTwitter /></a>
     </div>
   );
 };
