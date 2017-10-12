@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import QuoteBox from './component/QuoteBox';
+import QuoteButton from './component/QuoteButton';
 import $ from 'jquery';
 
 class App extends Component {
@@ -27,6 +28,7 @@ getQuote(){
     return (
       <div>
       <QuoteBox quote={this.state.quote}/>
+      <QuoteButton getQuote={this.getQuote.bind(this)} />
       </div>
     );
   }
