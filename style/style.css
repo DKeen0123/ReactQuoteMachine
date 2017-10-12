@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: ;
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+  padding: 70px 0;
+  min-height: 400px;
+
+}
+
+.quote-box {
+  border-radius: 10px;
+  padding: 30px;
+  color: black;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  display: block;
+}

@@ -1,15 +1,35 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import QuoteBox from './component/QuoteBox';
+import $ from 'jquery';
 
-import App from './components/app';
-import reducers from './reducers';
+class App extends Component {
+  constructor(props) {
+    super(props);
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+    this.state = {quote: []};
+    this.getQuote();
+  }
 
-ReactDOM.render(
-  <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
-  </Provider>
-  , document.querySelector('.container'));
+getQuote(){
+  $.ajax({
+    url: "https://cors-anywhere.herokuapp.com/https://api.forismatic.com/api/1.0/?",
+    dataType: "json",
+    data: "method=getQuote&format=json&lang=en",
+    success: (quote) => {
+      this.setState({quote});
+    }
+
+  });
+}
+
+  render() {
+    return (
+      <div>
+      <QuoteBox quote={this.state.quote}/>
+      </div>
+    );
+  }
+};
+
+ReactDOM.render(<App />, document.querySelector(".container"));
