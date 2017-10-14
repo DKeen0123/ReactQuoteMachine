@@ -4,8 +4,8 @@ import FaTwitter from 'react-icons/lib/fa/twitter';
 
 const TwitterButton = (props) => {
   return (
-    <div>
-      <a href='#' onClick={props.createTweet}><FaTwitter /></a>
+    <div className="button">
+      <a className="twitter--button" href='#' onClick={props.createTweet}><FaTwitter /></a>
     </div>
   );
 };
