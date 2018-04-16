@@ -1,25 +1,22 @@
-# ReduxSimpleStarter
+# React Quote Machine
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+This simple React application generates A Random Quote each time the 'New Quote' Button is clicked.
+
+### Technologies Used
+
+* React
+* Jquery
+* Webpack
 
 ### Getting Started
 
-There are two methods for getting started with this repo.
-
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
-
 ```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
+> git clone https://github.com/DKeen0123/ReactQuoteMachine
+> cd ReactQuoteMachine
 > npm install
 > npm start
 ```
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+### Notes
 
-```
-> npm install
-> npm start
-```
+This project was built before I began Makers Academy, and so does not have any tests. It also has non-responsive CSS. I have pinned this repo to display my ability before the course, and also my passion for react-based projects.
