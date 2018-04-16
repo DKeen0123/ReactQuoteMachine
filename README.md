@@ -20,3 +20,5 @@ This simple React application generates A Random Quote each time the 'New Quote'
 ### Notes
 
 This project was built before I began Makers Academy, and so does not have any tests. It also has non-responsive CSS. I have pinned this repo to display my ability before the course, and also my passion for react-based projects.
+
+The API I am grabbing quotes from is also quite slow and throttles requests, so It may appear quite slow and unresponsive at times.
