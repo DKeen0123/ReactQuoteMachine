@@ -19,7 +19,7 @@
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-usemin": "^0.3.28",
-    "jquery": "^2.2.1",
+    "jquery": "3.0.0",
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
